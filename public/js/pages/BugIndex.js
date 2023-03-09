@@ -43,7 +43,7 @@ export default {
 		}
 	},
 	created() {
-	this.isUserAdmin=userService.getLoggedInUser()?.isAdmin
+	//this.isUserAdmin=userService.getLoggedInUser()?.isAdmin
 		this.loadBUgsLater=bugService.debounce(this.loadBugs,500)
 		this.loadBugs()
 	},
